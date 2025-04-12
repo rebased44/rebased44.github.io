@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REBA | The Frog is Free</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="./slide.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: rgba(1, 65, 57, 1.0);
+      background: radial-gradient(at center, rgba(1, 65, 57, 1.0), rgba(1, 1, 1, 1.0));
+      color: #00ffe0;
+      font-family: 'Orbitron', sans-serif;
+      height: 100vh;
+      /* Or use a fixed value like 800px */
+      margin: 0;
+      overflow: hidden;
+      /* Prevent scrolling */
+    }
+
+    .frog-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .frog {
+      position: absolute;
+      width: 100px;
+      opacity: 0;
+      /* Start as invisible */
+      animation: float 10s linear infinite, fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-100vh) translateX(50px) rotate(360deg);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0.6;
+        /* Fade to initial opacity */
+      }
+    }
+
+
+    header {
+      margin-top: 10vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1.2rem;
+      color: #b2fef5;
+    }
+
+    .logo {
+      width: 400px;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 4px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1rem;
+      margin-top: 20px;
+      background: #00ffe0;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+      font-family: 'Orbitron', sans-serif;
+      border-style: solid;
+      border-color: white;
+      border-width: 2px;
+    }
+
+    .btn:hover {
+      background: #00ccb5;
+    }
+
+    .taxinfo {
+      display: block;
+      font-size: 15px;
+      position: fixed;
+      bottom: 4%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 1000px) {
+      header {
+        margin-top: 10vh;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+
+      p {
+        max-width: 600px;
+        margin: 1rem auto;
+        font-size: 1.2rem;
+        color: #b2fef5;
+      }
+
+      .logo {
+        width: 275px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 4px;
+      }
+
+      .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin-top: 15px;
+        background: #00ffe0;
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s ease;
+        font-family: 'Orbitron', sans-serif;
+        border-style: solid;
+        border-color: white;
+        border-width: 2px;
+      }
+
+      .btn:hover {
+        background: #00ccb5;
+      }
+
+      .taxinfo {
+        display: block;
+        font-size: 13px;
+        position: fixed;
+        bottom: 2.3%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Animated Frog Background -->
+  <div class="frog-bg">
+    <!-- You can duplicate this SVG 10x with random positions -->
+    <img src="frog.svg" class="frog" style="left: 10%; animation-delay: 0s;">
+    <img src="frog.svg" class="frog" style="left: 30%; animation-delay: 3s;">
+    <img src="frog.svg" class="frog" style="left: 50%; animation-delay: 6s;">
+    <img src="frog.svg" class="frog" style="left: 70%; animation-delay: 1s;">
+    <img src="frog.svg" class="frog" style="left: 90%; animation-delay: 4s;">
+    <img src="frog.svg" class="frog" style="left: 20%; animation-delay: 2s;">
+    <img src="frog.svg" class="frog" style="left: 40%; animation-delay: 5s;">
+    <img src="frog.svg" class="frog" style="left: 60%; animation-delay: 7s;">
+    <img src="frog.svg" class="frog" style="left: 80%; animation-delay: 6.5s;">
+    <img src="frog.svg" class="frog" style="left: 25%; animation-delay: 1.5s;">
+    <img src="frog.svg" class="frog" style="left: 70%; animation-delay: 9s;">
+    <img src="frog.svg" class="frog" style="left: 90%; animation-delay: 14s;">
+    <img src="frog.svg" class="frog" style="left: 20%; animation-delay: 2s;">
+    <img src="frog.svg" class="frog" style="left: 40%; animation-delay: 21s;">
+    <img src="frog.svg" class="frog" style="left: 60%; animation-delay: 7s;">
+    <img src="frog.svg" class="frog" style="left: 33%; animation-delay: 6.5s;">
+    <img src="frog.svg" class="frog" style="left: 25%; animation-delay: 1.5s;">
+    <img src="frog.svg" class="frog" style="left: 0%; animation-delay: 0s;">
+    <img src="frog.svg" class="frog" style="left: 45%; animation-delay: 0s;">
+
+  </div>
+
+  <header>
+    <img src="reba-logo.png" alt="REBA Logo" class="logo">
+    <h1>REBA</h1>
+    <p>A frog that escaped Ethereum rebasing hell and found peace on BASE. Rewarding every holder with Based Pepe. With
+      continious %2 Based Pepe Rewards ...</p>
+    <button class="btn">Base Scan</button>
+    <button class="btn">Charts</button>
+    <button class="btn">Telegram</button>
+    <button class="btn">X</button>
+    <div class="slide-container">
+      <div class="slide-text">
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+        %2 TAX as BASED Pepe Rewards -
+      </div>
+    </div>
+    <p class="taxinfo">⚠️ All tax %2 goes to the holders.</p>
+  </header>
+
+</body>
+
+</html>
