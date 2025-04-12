@@ -7,6 +7,7 @@
   <title>REBA | The Frog is Free</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   <link href="./slide.css" rel="stylesheet">
+  <link rel="icon" href="reba-logo.png" type="image/x-icon">
   <style>
     body {
       margin: 0;
@@ -115,6 +116,34 @@
       transform: translate(-50%, -50%);
     }
 
+    .input-button-group {
+      margin-top: 1%;
+      margin-right: auto;
+      margin-left: auto;
+      width: 400px;
+      display: flex;
+    }
+
+    .input-button-group input {
+      flex: 1;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .input-button-group button {
+      padding: 8px 10px;
+      font-size: 14px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .input-button-group button:hover {
+      cursor: pointer;
+      background-color:#00ffe0;
+    }
+    .input-button-group button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
     @media (max-width: 1000px) {
       header {
         margin-top: 10vh;
@@ -170,6 +199,30 @@
         transform: translate(-50%, -50%);
       }
 
+      .input-button-group {
+        margin-top: 14%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 350px;
+        display: flex;
+      }
+
+      .input-button-group input {
+        flex: 1;
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      .input-button-group button {
+        padding: 8px 10px;
+        font-size: 10px;
+        font-family: 'Orbitron', sans-serif;
+      }
+
+      .input-button-group button:hover {
+        cursor: pointer;
+        background-color:#00ffe0;
+      }
     }
   </style>
 </head>
@@ -205,25 +258,29 @@
     <img src="reba-logo.png" alt="REBA Logo" class="logo">
     <h1>REBA</h1>
     <p>A frog that escaped Ethereum rebasing hell and found peace on BASE. Rewarding every holder with Based Pepe. With
-      continious %2 Based Pepe Rewards ...</p>
+      continuous 2% Based Pepe Rewards ...</p>
     <button class="btn">Base Scan</button>
     <button class="btn">Charts</button>
     <button class="btn">Telegram</button>
     <button class="btn">X</button>
+    <div class="input-button-group">
+      <input type="text" placeholder="Enter Wallet Address. Soon ... ">
+      <button disabled>Check Rewards</button>
+    </div>
     <div class="slide-container">
       <div class="slide-text">
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
-        %2 TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
+        2% TAX as BASED Pepe Rewards -
       </div>
     </div>
-    <p class="taxinfo">⚠️ All tax %2 goes to the holders.</p>
+    <p class="taxinfo">⚠️ All tax 2% goes to the holders.</p>
   </header>
 
 </body>
